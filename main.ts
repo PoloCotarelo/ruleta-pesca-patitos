@@ -14,7 +14,7 @@ input.onButtonPressed(Button.B, function () {
     fila = 0
     columna = 0
     for (let index = 0; index < 25; index++) {
-        kitronik_motor_driver.stepperMotorTurnAngle(kitronik_motor_driver.MotorDirection.Forward, 360)
+        kitronik_motor_driver.stepperMotorTurnAngle(kitronik_motor_driver.MotorDirection.Forward, 180)
         led.toggle(fila, columna)
         basic.pause(1000)
         fila += 1
